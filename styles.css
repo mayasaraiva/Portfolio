@@ -58,6 +58,17 @@ h1{
     padding: 4%;
 }
 
+.formacao_e_certificados, .experiencias {
+    background-color: #0D1D27;
+    border-radius: 66px;
+    text-align: left;
+    font-family: 'JetBrains Mono', sans-serif;
+    padding: 50px;
+}
+
+.titulo_formacao, .exp_titulo{
+    text-align: center;
+}
 .rodape{
     background-color: #00E1B9;
     padding: 16px;

@@ -2,50 +2,60 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: black;
-    color: white;
+
+:root{
+    --cor_primaria: #1B262C;
+    --cor_secundaria: #BBE1FA;
+    --cor_terciaria: #3282B8;
+    --cor_hover:#0F4C75;
+    --cor_back_text: #0F4C75;
+
+    --font_primaria: 'KoHo', sans-serif;
+    --font_secundaria: 'JetBrains Mono', sans-serif;
 }
 
-.menu{
+
+body{
+    background-color: var(--cor_primaria);
+    color: var(--cor_secundaria);
+}
+
+.menu__botoes{
     display: flex;
-    justify-content:flex-end;
     gap: 14px;
-    margin-right: 25px;
-    margin-top: 2%;
+    padding: 2% 0 0 42.6%;
 }
 
 .botoes{
     width: 150px;
-    background-color: #00E1B9;
+    background-color: var(--cor_terciaria);
     border-radius: 10px;
-    padding: 37px, 0;
-
-    color: black;
+    padding: 2px;
+    margin-bottom: 3%;
+    color: var(--cor_primaria);
     text-align: center;
-    font-family: "KoHo", sans-serif;
+    font-family: var(--font_primaria);
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
 }
 
 .botoes:hover{
-    background-color: #626262;
-    color: #00E1B9;
-}
-.apresentacao{
-    display: flex;
-    justify-content: space-between;
-    gap: 79px;
+    background-color: var(--cor_hover);
+    color: var(--cor_terciaria);
 }
 
-img{
-    margin-top: auto;
+.apresentacao, .formacao_e_certificados, .experiencias{
+    padding: 0% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
 }
 
 h1{
     padding-bottom: 12px;
-    color: #00E1B9;
+    color: var(--cor_terciaria);
 }
 
 .resumo, p{
@@ -54,26 +64,55 @@ h1{
 
 .apresentacao_conteudo{
     font-size: 20px;
-    font-family: 'KoHo', sans-serif;
+    font-family: var(--font_primaria);
     padding: 4%;
 }
 
-.formacao_e_certificados, .experiencias {
-    background-color: #0D1D27;
+.formacao_e_certificados__conteudo, .experiencias__conteudo {
+    background-color: var(--cor_back_text);
     border-radius: 66px;
     text-align: left;
-    font-family: 'JetBrains Mono', sans-serif;
-    padding: 50px;
+    font-family: var(--font_secundaria);
+    font-size: 15px;
+    padding: 2% 2% 2% 5%;
 }
 
 .titulo_formacao, .exp_titulo{
     text-align: center;
 }
+
+.links_apresentacao{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+}
+
+.links_apresentacao__link{
+    display: flex;
+    justify-content: center;
+    gap:16px;
+    border: 2px solid var(--cor_terciaria);
+    width: 320px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21px 0;
+    text-decoration: none;
+    color:var(--cor_secundaria);
+    font-family: var(--font_primaria);
+}
+
+.links_apresentacao__link:hover{
+    background-color: var(--cor_hover);
+}
+
 .rodape{
-    background-color: #00E1B9;
+    background-color: var(--cor_terciaria);
     padding: 16px;
-    color: #626262;
+    color: var(--cor_hover);
     text-align: center;
 
-    margin-top: 10.6%;
+    margin-top: 8.3%;
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -46,20 +48,21 @@ body{
 }
 
 .apresentacao, .formacao_e_certificados, .experiencias{
-    padding: 0% 5%;
+    padding: 0% 2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 5%;
 }
 
+/*#apresentacao{
+    font-family: var(--font_secundaria);
+    font-size: 15px;
+}*/
+
 h1{
     padding-bottom: 12px;
     color: var(--cor_terciaria);
-}
-
-.resumo, p{
-    padding-bottom: 14px;
 }
 
 .apresentacao_conteudo{
@@ -68,13 +71,18 @@ h1{
     padding: 4%;
 }
 
+.resumo, p{
+    margin: auto;
+    padding-bottom: 14px;
+}
+
 .formacao_e_certificados__conteudo, .experiencias__conteudo {
     background-color: var(--cor_back_text);
-    border-radius: 66px;
+    border-radius: 45px;
     text-align: left;
     font-family: var(--font_secundaria);
     font-size: 15px;
-    padding: 2% 2% 2% 5%;
+    padding: 2% 3% 6% 6%;
 }
 
 .titulo_formacao, .exp_titulo{
@@ -84,14 +92,14 @@ h1{
 .links_apresentacao{
     display: flex;
     justify-content: space-between;
-    gap: 32px;
+    gap: 30px;
     align-items: center;
 }
 
 .links_apresentacao__link{
     display: flex;
     justify-content: center;
-    gap:16px;
+    gap:15px;
     border: 2px solid var(--cor_terciaria);
     width: 320px;
     text-align: center;
@@ -110,9 +118,9 @@ h1{
 
 .rodape{
     background-color: var(--cor_terciaria);
-    padding: 16px;
+    padding: 16px 0;
     color: var(--cor_hover);
     text-align: center;
-
-    margin-top: 8.3%;
+    margin-top: auto;
+   /* margin-top: 19%;*/
 }

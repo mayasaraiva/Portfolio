@@ -11,16 +11,16 @@
 </head>
 <body>
     <header class="menu">
-        <nav class="menu__botoes">
-            <a class="botoes" href="/index.html">Sobre mim</a>
-            <a class="botoes" href="formacao.html">Formação</a>
-            <a class="botoes" href="/experiencia.html">Experiência</a>
-            <a class="botoes" href="/contato.html">Contato</a>
+        <nav class="menu__botoes" id="nav">
+            <a class="botoes" onclick="index()" href="/index.html">Sobre mim</a>
+            <a class="botoes" onclick="loadFormacao()">Formação</a>
+            <a class="botoes" onclick="loadExperiencia()">Experiência</a>
+            <a class="botoes" onclick="loadContato()">Contato</a>
         </nav>
     </header>
-    <main class="apresentacao">
+    <main class="apresentacao" id="main-content">
         <img src="/img/foto_index.png" width="346px">
-        <section class="apresentacao_conteudo">
+        <section class="apresentacao_conteudo" id="apresentacao">
             <div class="resumo">
                 <h1>Mayara Saraiva</h1>
                 <p>
@@ -46,5 +46,6 @@
     <footer>
         <p class="rodape">© 2024 Mayara Maciel Saraiva. All Rights Reserved.</p>
     </footer>
+    <script src="./app.js"></script>
 </body>
 </html>

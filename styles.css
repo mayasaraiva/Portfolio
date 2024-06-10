@@ -23,15 +23,10 @@ body{
     color: var(--cor_secundaria);
 }
 
-#main-content{
-    width: fit-content;
-    margin: 52px auto;
-}
-
 .menu__botoes{
     display: flex;
     gap: 14px;
-    padding: 2% 0 0 42.6%;
+    padding: 2% 3% 0 5%;
 }
 
 .botoes{
@@ -131,7 +126,7 @@ h1{
    /* margin-top: 19%;*/
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1000px){
     #main-content {
         min-width: 40px;
         flex-direction: column;
@@ -139,5 +134,10 @@ h1{
 
     #botoes-link{
         flex-direction: column;
+    }
+
+    .botoes{
+        width: 100px;
+        font-size: 16px;
     }
 }

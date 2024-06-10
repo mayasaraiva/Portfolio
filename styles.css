@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 
 :root{
@@ -20,6 +21,11 @@
 body{
     background-color: var(--cor_primaria);
     color: var(--cor_secundaria);
+}
+
+#main-content{
+    width: fit-content;
+    margin: 52px auto;
 }
 
 .menu__botoes{
@@ -123,4 +129,15 @@ h1{
     text-align: center;
     margin-top: auto;
    /* margin-top: 19%;*/
+}
+
+@media (max-width: 1200px){
+    #main-content {
+        min-width: 40px;
+        flex-direction: column;
+    }
+
+    #botoes-link{
+        flex-direction: column;
+    }
 }

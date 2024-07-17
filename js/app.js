@@ -3,6 +3,10 @@ async function loadFormacao(){
     const textForm = await fileRequest.text();
 
     document.getElementById('apresentacao').innerHTML = textForm;
+
+    //trocar imagem
+    const imageElement = document.getElementById('foto_index')
+    imageElement.src = 'assets/img/foto_index.png'
 }
 
 async function loadExperiencia(){
@@ -10,6 +14,10 @@ async function loadExperiencia(){
     const textForm2 = await fileRequest2.text();
 
     document.getElementById('apresentacao').innerHTML = textForm2;
+
+    //trocar imagem
+    const imageElement = document.getElementById('foto_index')
+    imageElement.src = 'assets/img/foto_index.png'
 }
 
 async function loadContato(){
@@ -20,4 +28,14 @@ async function loadContato(){
     //trocar imagem
     const imageElement = document.getElementById('foto_index')
     imageElement.src = 'assets/img/emoji.png'
+}
+
+async function loadIndex(){
+    const fileRequest4 = await fetch('index.html')
+    const textForm4 = await fileRequest4.text();
+    document.getElementById('apresentacao').innerHTML = textForm4;
+
+    //trocar imagem
+    const imageElement = document.getElementById('foto_index')
+    imageElement.src = 'assets/img/foto_index.png'
 }

@@ -33,7 +33,14 @@ async function loadContato(){
 async function loadIndex(){
     const fileRequest4 = await fetch('index.html')
     const textForm4 = await fileRequest4.text();
-    document.getElementById('apresentacao').innerHTML = textForm4;
+   
+    //Criar elemento temporário para dividir o conteúdo e pegar uma tag especifica
+    const tempElement = document.createElement('div');
+    tempElement.innerHTML = textForm4;
+
+    const specificTag = tempElement.querySelector('#apresentacao');
+
+    document.getElementById('apresentacao').innerHTML = specificTag.innerHTML;
 
     //trocar imagem
     const imageElement = document.getElementById('foto_index')

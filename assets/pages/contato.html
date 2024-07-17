@@ -1,0 +1,10 @@
+<section class="form_contato" id="form-contato">
+    <form onsubmit="SendEmail(); return false;" method="post">
+        <input id="name" name="name" type="text" placeholder="Seu nome" required>
+        <input id="email" name="email" type="email" placeholder="Seu E-mail" required>
+        <textarea id="message" name="message" cols="30" rows="10" placeholder="Sua mensagem :)"
+            required></textarea>
+        <input id="enviar-btn" type="submit" value="Enviar">
+    </form>
+</section>
+<script src="./js/sendEmail.js"></script>

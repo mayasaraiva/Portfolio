@@ -1,1 +1,6 @@
+$ dig mayara-saraiva.com +nostats +nocomments +nocmd
+> ;mayara-saraiva.com                  IN      A
+> mayara-saraiva.com           3592    IN      CNAME   mayasaraiva.github.io.
+> mayasaraiva.github.io.      43192    IN      CNAME   GITHUB-PAGES-SERVER .
+> GITHUB-PAGES-SERVER .         22     IN      A       192.0.2.1
 mayara-saraiva.com

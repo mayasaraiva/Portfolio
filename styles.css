@@ -48,18 +48,18 @@ body{
     color: var(--cor_terciaria);
 }
 
+img #foto_index{
+    position: relative;
+
+}
+
 .apresentacao, .formacao_e_certificados, .experiencias{
     padding: 0% 2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 5%;
+    gap: 2%;
 }
-
-/*#apresentacao{
-    font-family: var(--font_secundaria);
-    font-size: 15px;
-}*/
 
 h1{
     padding-bottom: 12px;
@@ -119,19 +119,20 @@ h1{
 
 .rodape{
     background-color: var(--cor_terciaria);
-    padding: 16px 0;
+    padding: 20px 0;
+    width: 100%;
     color: var(--cor_hover);
     text-align: center;
-    margin-top: auto;
-   /* margin-top: 19%;*/
+    flex-direction: column;
+    margin-top: 19%;
 }
 
 .form_contato{
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
-    gap: 5px;
+    gap: 2px;
 }
 
 form{
@@ -142,8 +143,8 @@ form{
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    gap: 40px;
     width: min(60vw, 400px);
+    gap: 15px;
 }
 
 form input, form textarea{
@@ -168,7 +169,7 @@ form input[type=submit] {
   }
 
 
-@media (max-width: 1000px){
+@media (max-width: 1235px){
     #main-content {
         min-width: 40px;
         flex-direction: column;
@@ -181,5 +182,9 @@ form input[type=submit] {
     .botoes{
         width: 100px;
         font-size: 16px;
+    }
+
+    .rodape{
+        margin-top: 66%;
     }
 }
